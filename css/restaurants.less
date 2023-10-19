@@ -1,0 +1,197 @@
+// main: style.less
+
+.restaurants {
+    width: 100%;
+    margin-bottom: 103px;
+}
+
+.restaurants__inner {
+    width: 100%;
+    
+    padding-bottom: 120px;
+    border-bottom: 1px solid #CBCBCB;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurants-title {
+    color: #323142;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25.558px;
+    
+    margin: 0 auto;
+}
+
+.top-restaurants {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 85px;
+    //margin-bottom: auto;
+}
+
+.restaurant_card {
+    position: relative;
+
+    //max-width: 30%;
+    width: clamp(280px, 40%, 396px);
+    max-height: 298px;
+    
+    margin-right: 2%;
+    margin-bottom: 65px;
+    
+    border-radius: 30px;
+    //border: 1.251px solid #F4F4F6;
+    background: #FFF; 
+    box-shadow: 5.94564px 71.34769px 35.67385px 0px rgba(229, 229, 229, 0.70);
+    
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        
+        background: url('../images/Bookmark.svg');
+        width: 41px;
+        height: 41px;
+        
+        right: 27px;
+        bottom: 17px;
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.restaurant_card_image {
+    position: relative;
+    
+    &--bg {
+        width: 396px;
+        border-radius: 30px 30px 0px 0px;
+    }
+    
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 90;
+        
+        width: 100%;
+        height: 177px;
+        
+        border-radius: 30px 30px 0px 0px;
+        opacity: .1;
+        background: #323142;
+    }
+}
+
+.restaurant_card_image img {
+    //position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+.restaurant_card_info {
+    padding: 11px 0 18px 34px;
+}
+
+.restaurant_polza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: min-content;
+    height: 24px;
+    padding: 0 9px;
+    
+    border-radius: 5.4px;
+    background: #F7EDD0;
+    
+    color: #DAA31A;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: .7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    &--red {
+        color: #FB471D;
+        background: #F7C5BA;
+    }
+}
+
+.restaurant_name {
+    color: #323142;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.43rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 162.5%;
+}
+
+.restaurant_tr {
+    display: inline-block;
+    width: max-content;
+    
+    color: #8E97A6;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.07rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.333%;
+    
+    &--t {
+        margin-right: 25px;
+        &::after {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            background: url('../images/Star_blue.svg') no-repeat;
+            width: 27px;
+            height: 27px;
+            color: #8E97A6;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.07rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 133.333%;
+        }
+    }
+}
+
+.restaurants-all {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    color: #ACADB9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.11rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 226%;
+    letter-spacing: -0.1px;
+    
+    &::after {
+        content: '';
+        display: inline-block;
+        background: url("../images/Group%20427320334.svg");
+        
+        transform: translateY(-2px);
+        
+        width: 19px;
+        height: 19px;
+        
+        margin-left: 20px;
+    }
+}

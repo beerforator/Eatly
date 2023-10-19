@@ -1,0 +1,107 @@
+// compress: true
+
+html {
+    font-size: 18px;
+    //font-size: clamp(18px, 10wh, 32px);
+}
+
+body {
+//    font-family: 'Manrope', sans-serif;
+//    font-family: 'Poppins', sans-serif;
+//    font-family: 'Public Sans', sans-serif;
+    margin: 0;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    
+    color: #676767;
+    background-color: #F9F9F9;
+    //background-color: gray;
+}
+
+*,
+*:before,
+*:after {
+    //border: 1px solid black;
+    
+    box-sizing: border-box;
+}
+
+
+/* Helpers */
+
+.container {
+    width: 100%;
+    max-width: 1268px;
+    margin: 0 auto;
+    
+    //border: 2px solid #F59E0B;
+    
+    padding: 0 0.5rem;
+}
+
+.color_btn {
+    color: #F9F9F9;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: capitalize;
+    
+    border-radius: 17.829px;
+    background: #6C5FBC;
+    
+    padding: 1em 1.5em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &--light {
+        font-weight: 500;
+        font-size: .9rem;
+        padding: 1em 1.93em;
+        
+        &--pro {
+            background-color: transparent;
+            border: 2px solid #6C5FBC;
+            
+            color: #6C5FBC;
+        }
+    }
+    
+    &--app {
+        font-weight: 500;
+        width: 186px;
+        height: 64px;
+        
+        &::after {
+            content: '';
+            display: block;
+            margin-left: 15px;
+            
+            width: 28px;
+            height: 28px;
+
+            background: url('../images/arrow-right.svg') no-repeat;
+        }
+    }
+}
+
+.em-b {
+    color: #5C4EAE;
+    white-space: nowrap;
+}
+
+
+/* Import */
+
+@import "header";
+@import "intro";
+@import "features";
+@import "app";
+@import "restaurants";
+@import "purchases";

@@ -1,0 +1,106 @@
+// main: style.less
+
+.app {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.app__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-bottom: 120px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+// Phone
+
+.app_phone {
+    position: relative;
+    margin-left: 9%;
+    
+    &::after {
+        position: absolute;
+        z-index: 5;
+        
+        top: -30px;
+        right: -60px;
+        
+        content: '';
+        display: block;
+        
+        width: 52px;
+        height: 61px;
+        
+        background: url('../images/Illustration%2002.svg') no-repeat;
+        background-size: 100% 100%;
+        
+        transform: rotate(-150deg);
+    }
+}
+
+.phone_screen {
+    width: 100%;
+    max-width: 304px; 
+    height: auto;
+}
+
+
+// Discription
+
+.app_discription {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    &::after {
+        position: absolute;
+        z-index: 5;
+        content: '';
+        display: block;
+        
+        bottom: -50px;
+        right: 210px;
+        
+        width: 169px;
+        height: 61px;
+        
+        background: url('../images/Vector%2014download.svg') no-repeat;
+    }
+}
+
+.app_text {
+    width: 100%;
+    max-width: 545px;    
+    margin-bottom: 2.17rem;
+}
+
+.app_title {
+    color: #18181B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 114%;
+    text-transform: capitalize;
+    
+    margin-bottom: 3.5rem;
+}
+
+.app_subtitles {
+    margin: 0;
+    padding-left: 30px;
+}
+
+.app_subtitle {    
+    color: #676767;
+    font-size: 1.13rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    
+    margin-bottom: 1.5rem;
+    
+    list-style-type: disc;
+}

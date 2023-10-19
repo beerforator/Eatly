@@ -1,0 +1,209 @@
+// main: style.less
+
+.intro {
+    width: 100%;
+    margin-bottom: 85px;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 608px;
+}
+
+//Greeting
+
+.greeting {
+    width: 100%;
+    max-width: 567px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_block {
+    width: 100%;
+    margin-bottom: 2.94rem;
+}
+
+.greeting_pretitle {
+    color: rgba(32, 31, 31, 0.20);
+    font-family: 'Poppins', sans-serif;
+    font-size: .83rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 2px;
+    
+    &::before {        
+        content: '';
+        display: inline-block;
+        width: 54px;
+        height: 2px;
+        
+        margin-bottom: 5px;
+        margin-right: 20px;
+        
+        opacity: 0.2;
+        background: #201F1F;
+    }
+}
+
+.greeting_title {
+    color: #201F1F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.16rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -3px;
+}
+
+.greeting_subtitle {
+    width: 100%;
+    max-width: 89%;
+    
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    opacity: 0.7;
+}
+
+.greeting_start {
+    width: 50%;
+    
+    margin-bottom: 33px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro {
+    margin-left: 18px;
+}
+
+.greeting_rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    width: 53%;
+}
+
+.trust_pilot {
+    width: 123px;
+    height: 30px;
+}
+
+.stars {
+    width: 96px;
+    height: 15px;
+    
+    margin-bottom: 7px;
+}
+
+.stars_n {
+    color: #334155;
+    font-size: .83rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+//Dish
+
+.dish {
+    position: relative;
+    width: 424px;
+    height: 424px;
+    
+    margin-right: 82px;
+    
+    //
+    border: 1px solid black;
+}
+
+.dish_circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 424px;
+    height: 424px;
+    border-radius: 424px;
+    
+    background: -webkit-linear-gradient(137deg, #6C5FBC 4.83%, #5144A0 98.22%);
+    background: linear-gradient(137deg, #6C5FBC 4.83%, #5144A0 98.22%);
+    
+    &::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: inline-block;
+        
+        width: 101px;
+        height: 97px;
+        
+        background: url("../images/Arrow%2001.png");
+        
+        right: -55px;
+        top: 55px;
+    }
+}
+
+.dish_salat {
+    position: absolute;
+    width: 430px;
+    height: 444px;
+    
+    top: 8px;
+    right: 18px;
+}
+
+.dish_graf {
+    position: absolute;
+    width: 207px;
+    height: 205px;
+    
+    bottom: -14px;
+    left: -126px;
+    
+    &::before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: inline-block;
+        
+        width: 39px;
+        height: 37px;
+        background: url("../images/Illustration%2002.svg");
+        
+        left: -10px;
+        bottom: -80px;
+    }
+}
+
+.dish_hell {
+    position: absolute;
+    width: 329px;
+    height: 89px;
+        
+    top: -67px;
+    //right: -47px;
+    right: -25px;
+    
+    &::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: inline-block;
+        
+        width: 42px;
+        height: 28px;
+        background: url("../images/Illustration%2001.svg");
+        
+        right: -70px;
+        top: -22px;
+    }
+}
