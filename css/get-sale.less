@@ -1,0 +1,110 @@
+// main: style.less
+
+.get-sale {
+    margin-bottom: 160px;
+}
+
+.get-sale__inner {
+    position: relative;
+}
+
+.get-sale-block {
+    overflow: hidden;
+    
+    position: relative;
+    display: flex;
+    
+    margin: 0 auto;
+    padding: 38px 0 61px 66px;
+    
+    width: 96%;
+    height: 280px;
+    
+    border-radius: 30px;
+    background: rgba(92, 78, 174, 100%);
+    
+    &::before {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: -20px;
+        
+        width: 1214px;
+        height: 280px;
+        
+        content: '';
+        display: block;
+        background: url("../images/Group%20427320335.svg");
+    }
+}
+
+.get-sale_stuff {
+    z-index: 1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    gap: 10px;
+}
+
+.get-sale_stuff .title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.89rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.get-sale-form {
+    position: relative;
+}
+
+.get-sale_stuff .email {
+    width: 439.733px;
+    height: 68px;
+    
+    //outline: none;
+    
+    border: none;
+    border-radius: 14px;
+    background: #FFF;
+    box-shadow: 0px 7.25333px 45.33334px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+.get-sale_stuff a {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px 24px;
+    
+    width: 132.373px;
+    height: 53.443px;
+    flex-shrink: 0;
+    
+    border-radius: 11.253px;
+    background: #6C5FBC;
+    
+    color: #F7F8FA;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: .78rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.443px;
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.get-sale-image {
+    position: absolute;
+    right: 70px;
+    top: 63px;
+}
