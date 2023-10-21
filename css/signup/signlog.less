@@ -1,0 +1,246 @@
+// main: ../style.less
+
+.signlog_body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    height: 100vh;
+}
+
+// Sign Up Form
+
+.signlog_side {
+    width: 100%;
+    max-width: 777px;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding: 32px 48px;
+    margin: 0 auto;
+}
+
+.signlog_logo {
+    width: 46px;
+    height: 43px;
+    
+    margin-bottom: 60px;
+}
+
+.signlog_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signlog_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    width: 100%;
+    max-width: 382px;
+}
+
+.signlog-title {
+    color: #323142;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.94rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -1.41px;
+    
+    text-align: center;
+    
+    margin-bottom: 48px;
+}
+
+.email-request {
+    color: #CFCFD3;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+
+    text-align: center; 
+    transform: translateY(-24px);
+    margin-bottom: 66px;
+}
+
+.signlog_stuff {
+    display: flex;
+    flex-direction: column;
+}
+
+.alternative_form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    padding-bottom: 65px;
+    margin-bottom: 34px;
+    
+    &::after {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        
+        content: "OR";
+        color: rgba(0, 90, 100, 0.35);
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.11rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+    }
+}
+
+.alt-btn {
+    width: 183.438px;
+    height: 63.37px;
+    flex-shrink: 0;
+
+    border-radius: 13.341px;
+    background: #F5F5F5;
+
+    color: #323142;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: 'Poppins', sans-serif;
+    font-size: 31.129px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 43.581px */
+    letter-spacing: 2.835px;
+    text-transform: uppercase;
+}
+
+.alt-btn img {
+    width: 27px;
+    height: 31px;
+    
+    transform: translateY(-2px);
+}
+
+.tradition_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    //width: 382.441px;
+    //height: 74.487px;
+    //flex-shrink: 0;
+    
+    
+    margin-bottom: 24px;
+    
+    &:nth-child(3) {
+        margin-bottom: 40px;
+    }
+}
+
+.form-item input {
+    width: 100%;
+    height: 74px;
+    
+    border: none;
+    border-radius: 14.275px;
+    background: #F5F5F5;
+    
+    color: #737583;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.167px;
+    text-transform: uppercase;
+    
+    padding: 0 30px;
+    
+    &::-webkit-input-placeholder {
+        color: rgba(194, 195, 203, 35%);
+    }
+    
+    &:focus {
+        outline-color: #6C5FBC;
+    }
+}
+
+.form-item .color_btn {
+    text-transform: uppercase;
+}
+
+.forget-password {    
+    color: #6C5FBC;
+    
+    transform: translateY(-11px);
+    margin-bottom: 9px;
+    text-align: end;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: .83rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: .7;
+}
+
+.signlog-to-login {
+    color: #3E3E3E;
+    
+    text-align: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.189px;
+}
+
+.signlog-to-login a {
+    color: #6C5FBC;
+}
+
+.signlog_policy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signlog_policy p {
+    color: #718096;
+    font-family: 'Poppins', sans-serif;
+    font-size: .89rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+}
+
+// Slider
+
+.slider_side {
+    width: 100%;
+    max-width: 663px;
+    height: 100%;
+    
+    background-color: #6C5FBC;
+}
